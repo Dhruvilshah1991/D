@@ -38,7 +38,7 @@
       font-size: 16px;
       border-radius: 5px;
       cursor: pointer;
-      margin-top: 20px;
+      margin: 10px;
     }
     button:hover {
       background-color: #ff8c8c;
@@ -48,8 +48,9 @@
 <body>
   <div class="container">
     <h1>Here's Me Telling You Why You're Wonderful Dhvani</h1>
-    <p id="message">Keep Clicking to see why you're so special ! </p>
+    <p id="message">Keep Clicking to see why you're so special!</p>
     <button onclick="showNextReason()">Click for Cheese</button>
+    <button onclick="goBack()">Missed Something, Go Back</button>
   </div>
 
   <script>
@@ -69,7 +70,7 @@
       "You’re Cutu.",
       "You’re effortlessly beautiful, even at 6 am.",
       "Seeing you blush is the most beautiful feeling.",
-      "You're the reason i look forward to coming to work.",
+      "You're the reason I look forward to coming to work.",
       "You’re incredibly beautiful.",
       "You’re always so understanding.",
       "You have the purest heart.",
@@ -138,7 +139,7 @@
       "You’re the center of my universe.",
       "You’re a true blessing in my life.",
       "You’re the one who makes me love purple ",
-       "You’re the one who makes my heart go Boom Boom ",
+      "You’re the one who makes my heart go Boom Boom ",
       "You’re my peace in the chaos.",
       "You’re my greatest treasure.",
       "You make love feel like magic.",
@@ -147,11 +148,18 @@
     let index = 0;
 
     function showNextReason() {
-      if (index < reasons.length) {
+      if (index < reasons.length - 1) {
         document.getElementById("message").innerText = reasons[index];
         index++;
       } else {
         document.getElementById("message").innerText = "That’s how much you mean to me! ❤️";
+      }
+    }
+
+    function goBack() {
+      if (index > 0) {
+        index--;
+        document.getElementById("message").innerText = reasons[index];
       }
     }
   </script>
