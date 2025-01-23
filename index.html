@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100 Reasons</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #fef9f3;
+      text-align: center;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    h1 {
+      color: #ff6b6b;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+      color: #555;
+    }
+    button {
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #ff8c8c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Here's Me Telling You Why You're Wonderful</h1>
+    <p id="message">Keep Clicking to see why you're so special ! </p>
+     <p id="message">You can keep doing this all your flight </p>
+    <button onclick="showNextReason()">Click for Cheese</button>
+  </div>
+
+  <script>
+    const reasons = [
+      "I miss hearing your voice.",
+      "I miss your beautiful smile.",
+      "I miss the way you make me Blush.",
+      "I miss holding your hand and twirling my fingers.",
+      "I miss the way your presence calms me.",
+      "I miss your heartbeats",
+      "I miss the way you look at me>>>>>>>>.",
+      "I miss your warmth.",
+      "I miss the way we have been talking for long minutes lately",
+      "I miss everything about you.",
+      "You make everything around you look happier.",
+      "You’re mean happiness.",
+      "You’re Cutu.",
+      "You’re effortlessly beautiful, even at 6 am.",
+      "Seeing you blush is the most beautiful feeling.",
+      "You're the reason i look forward to coming to work.",
+      "You’re incredibly beautiful.",
+      "You’re always so understanding.",
+      "You have the purest heart.",
+      "You’re one of a kind.",
+      "You make me feel loved.",
+      "You make me feel appreciated.",
+      "You make my heart race.",
+      "You make me feel crazier than ever.",
+      "You make me smile endlessly.",
+      "You bring out the best in me.",
+      "You make me look forward to every day.",
+      "You make life brighter.",
+      "You make me believe in forever.",
+      "You make everything worth it.",
+      "I can’t wait to hold you close.",
+      "I can’t wait to feel your warmth.",
+      "I can’t wait to get lost in your eyes.",
+      "I can’t wait to share stories face to face.",
+      "I can’t wait to explore new memories with you.",
+      "I can’t wait to spend time just being with you.",
+      "I can’t wait to see you smile at me.",
+      "I can’t wait for every little moment together.",
+      "You always know how to make me smile.",
+      "You’re the most beautiful person inside and out.",
+      "You’re my biggest cheerleader.",
+      "You make me look forward to Mumbai ;).",
+      "You light up every room you enter.",
+      "You’re my favorite person in the world.",
+      "You always listen when I need you.",
+      "You make life magical.",
+      "You’re my constant source of happiness.",
+      "You’re patient and kind.",
+      "You make me feel like I belong to you.",
+      "You have the sweetest soul.",
+      "You never fail to amaze me with your fashion skills.",
+      "You make every little moment special.",
+      "You’re the most creative person I know.",
+      "You’re simply unforgettable.",
+      "You brighten the darkest days.",
+      "You’re always so thoughtful.",
+      "You’re a dream come true.",
+      "You’re my best friend and soulmate.",
+      "You make love feel effortless.",
+      "You’ve changed my life after being my diehard crush.",
+      "You bring joy wherever you go.",
+      "You’re my reason for everything good.",
+      "You’re why the MOON shines.",
+      "You make me feel alive.",
+      "You’re endlessly fascinating.",
+      "You’re my forever and always.",
+      "You make the simplest things extraordinary.",
+      "You make time stand still when I’m with you.",
+      "You’re the most precious part of my life.",
+      "You’ve captured my heart completely.",
+      "You’re endlessly captivating.",
+      "You make the world better just by being in it.",
+      "You’re my everything.",
+      "You’re the one for whom I want to sing Sang Rahiyo.",
+      "You’re the love of my life.",
+      "You make every moment unforgettable.",
+      "You’re make me wanna travel to Sevasi 10 times in a day.",
+      "You’re make me love packing bags for a trip.",
+      "I love handling your preferences.",
+      "You and I both a shopaholics.",
+      "You’re the one who gets me cook so much cheese in my head all day",
+      "You’re the center of my universe.",
+      "You’re a true blessing in my life.",
+      "You’re the one who makes me love purple ",
+       "You’re the one who makes my heart go Boom Boom ",
+      "You’re my peace in the chaos.",
+      "You’re my greatest treasure.",
+      "You make love feel like magic.",
+      "You’re my forever love."
+    ];
+    let index = 0;
+
+    function showNextReason() {
+      if (index < reasons.length) {
+        document.getElementById("message").innerText = reasons[index];
+        index++;
+      } else {
+        document.getElementById("message").innerText = "That’s how much you mean to me! ❤️";
+      }
+    }
+  </script>
+</body>
+</html>
